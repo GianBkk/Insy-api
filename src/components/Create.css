@@ -1,0 +1,38 @@
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.form-container h2 {
+  text-align: center;
+  color: black;
+  padding: 2rem 0;
+  border-bottom: 1px solid black;
+}
+
+.form-container .form-group {
+  position: relative;
+
+  margin: 0 10%;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 30px;
+  border: none;
+  transition: color 0.25s;
+}
+
+.form-container .form-group input:hover {
+  color: #fc1a02;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+    height 0.25s ease-out 0.75s;
+}
