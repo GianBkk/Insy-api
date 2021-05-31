@@ -1,11 +1,16 @@
 import React from 'react'
-//import styled from '@emotion/styled'
+import { useHistory } from "react-router-dom";
+
 
 
 
 const Card = (props) => {
+
+    const history = useHistory();
+    
+
     return (
-        <div className={props.temparatur > 1 ? 'card-container container-warm' : 'card-container container-cold'}>
+        <div className={props.temparatur > 1 ? 'card-container container-warm' : 'card-container container-cold'} onClick={() => history.push(`/edit/${props.mainid}`)}>
             <div className='card-info'>
                 <h1 className='card-title'>{props.title}</h1>
                 <h3 className='card-date'>{props.datum}</h3>

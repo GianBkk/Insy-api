@@ -31,20 +31,24 @@
   justify-content: space-around;
   align-items: center;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 .container-warm {
   background: linear-gradient(to bottom, #ed5609, #d67e00);
+  border: 2px solid #a6110f;
 }
 
 .container-cold {
   background: linear-gradient(to bottom, #024ed9, #0996f0);
+  border: 2px solid #061366;
 }
 
 .card-container:hover {
   box-shadow: 10px 15px #888888;
   transition: all 0.5s;
-  transform: rotateX(20deg) rotateY(30deg);
+  transform: rotateX(40deg) rotateY(60deg);
+  transform: scale(1.1);
 }
 
 .card-title {
